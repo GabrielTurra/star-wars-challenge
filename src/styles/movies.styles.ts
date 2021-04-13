@@ -1,4 +1,26 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromRight = keyframes`
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+`;
+
+const appearFromTop = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+`;
 
 export const Container = styled.div`
   max-width: 1400px;
@@ -16,6 +38,8 @@ export const Content = styled.div`
 `;
 
 export const ImageBanner = styled.div`
+  animation: ${appearFromTop} 0.6s ease;
+
   img {
     width: 100%;
     max-width: 420px;
@@ -54,6 +78,7 @@ export const ReleaseInformation = styled.div`
 export const DescriptionContainer = styled.div`
   margin-left: 4rem;
   flex: 1;
+  animation: ${appearFromRight} 0.6s ease;
 
   > span {
     font-size: 1.5rem;

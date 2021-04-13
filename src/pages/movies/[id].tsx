@@ -84,7 +84,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!id) {
     return {
       redirect: {
-        destination: '/error',
+        destination: '/404',
         permanent: false,
       },
     };
@@ -99,7 +99,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!movie) {
     return {
       redirect: {
-        destination: '/error',
+        destination: '/404',
         permanent: false,
       },
     };

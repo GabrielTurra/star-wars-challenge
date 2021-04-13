@@ -13,8 +13,8 @@ export default class MyDocument extends Document {
 
           <link
             rel="shortcut icon"
-            href="/star-wars-logo/resources/assets/star-wars-logo.svg"
-            type="image/svg"
+            href="./assets/favicon.png"
+            type="image/png"
           />
         </Head>
         <body>

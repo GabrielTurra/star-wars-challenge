@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromRight = keyframes`
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+`;
 
 export const Container = styled.div`
   padding: 2rem;
@@ -14,6 +25,7 @@ export const Container = styled.div`
 
   cursor: pointer;
   transition: background 0.3s ease;
+  animation: ${appearFromRight} 0.6s ease;
 
   &::before {
     content: '';
