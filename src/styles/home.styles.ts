@@ -24,7 +24,7 @@ export const Title = styled.p`
   text-align: center;
   text-transform: uppercase;
   line-height: 40px;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 
   span {
     font-weight: 700;
