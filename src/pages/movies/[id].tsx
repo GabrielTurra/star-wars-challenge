@@ -16,7 +16,7 @@ import {
   DescriptionContainer,
   ReleaseInformation,
   MovieResume,
-} from './styles';
+} from '../../styles/movies.styles';
 
 interface MoviesItemProps {
   movie: {

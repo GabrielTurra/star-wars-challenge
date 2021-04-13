@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticProps } from 'next';
 
 import { MovieItem } from '../components/MovieItem';
 
 import { convertToRoman } from '../utils/convertToRoman';
 
-import { Container, Content, Title } from './homeStyle';
+import { Container, Content, Title } from '../styles/home.styles';
 
 interface MoviesItemProps {
   title: string;
@@ -48,13 +48,6 @@ export default function Home({ movies }: MoviesProps) {
     </>
   );
 }
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: 'blocking',
-  };
-};
 
 export const getStaticProps: GetStaticProps = async () => {
   const movies = await fetch('https://swapi.dev/api/films/')
