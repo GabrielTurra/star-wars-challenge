@@ -30,6 +30,7 @@ export default function Error() {
           <ButtonHome>
             <FaChevronLeft />
             Accept the Dark Side
+            <FaChevronLeft />
           </ButtonHome>
         </Link>
       </Content>
