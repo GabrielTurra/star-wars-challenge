@@ -25,7 +25,9 @@ interface MoviesItemProps {
     opening_crawl: string;
     director: string;
     producer: string;
+    release_date: string;
     formated_release_date: string;
+    resume: string;
   };
 }
 
@@ -34,6 +36,11 @@ export default function MoviePage({ movie }: MoviesItemProps) {
     <div>
       <Head>
         <title>{movie.title} | Star Wars Collection</title>
+
+        <meta name="description" content={movie.resume} />
+        <meta property="og:description" content={movie.resume} />
+
+        <meta property="article:modified_time" content={movie.release_date} />
       </Head>
 
       <Container>
@@ -41,7 +48,7 @@ export default function MoviePage({ movie }: MoviesItemProps) {
           <ImageBanner>
             <img
               src={`../assets/${getImageLink(movie.episode_id, movie.title)}`}
-              alt=""
+              alt={`Banner of - ${movie.title}`}
             />
           </ImageBanner>
 
@@ -114,6 +121,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           "dd MMMM',' yyyy",
           { locale: pt },
         ),
+        resume: `${movie.opening_crawl.substring(0, 120)}...`,
       },
     },
     revalidate: 60 * 60 * 24, // 24 hours

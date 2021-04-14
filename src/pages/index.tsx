@@ -21,7 +21,15 @@ export default function Home({ movies }: MoviesProps) {
   return (
     <>
       <Head>
-        <title>Star Wars Collection</title>
+        <title>
+          Star Wars Collection - The best releases of your favorite franchise
+          movies
+        </title>
+
+        <meta
+          name="description"
+          content="Star Wars is an American epic space opera media franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon."
+        />
       </Head>
 
       <Container>
