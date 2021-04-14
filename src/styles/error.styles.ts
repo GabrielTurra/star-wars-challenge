@@ -19,9 +19,19 @@ export const Content = styled.div`
 
 export const ImageBanner = styled.div`
   margin-top: 2rem;
+
+  div {
+    position: static !important;
+  }
+
   img {
-    width: 100%;
-    max-width: 420px;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: auto !important;
+    max-width: 420px !important;
+    min-height: auto !important;
+    max-height: auto !important;
   }
   @media (max-width: 1050px) {
     text-align: center;

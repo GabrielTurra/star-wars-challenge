@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { FaChevronLeft } from 'react-icons/fa';
 
@@ -24,7 +25,12 @@ export default function Error() {
           <span>You lost your own way, my son.</span>
         </DescriptionContainer>
         <ImageBanner>
-          <img src="/assets/404.png" alt="" />
+          <Image
+            src="/assets/404.png"
+            alt="Not find, young padawan"
+            layout="fill"
+            priority
+          />
         </ImageBanner>
         <Link href="/">
           <ButtonHome>
