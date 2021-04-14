@@ -52,7 +52,6 @@ export default function MoviePage({ movie }: MoviesItemProps) {
               src={`/assets/${movie.imageLink}`}
               alt={`Banner of - ${movie.title}`}
               layout="fill"
-              loading="eager"
               priority
             />
           </ImageBanner>
