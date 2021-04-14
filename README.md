@@ -1,5 +1,5 @@
 <img src="./.github/demonstration.gif">
-<div style="display: flex; justify-content: space-between;">
+<div align="center">
   <img width="32%" height="auto" src="./.github/home.jpg">
   <img width="32%" height="auto" src="./.github/movie_page.jpg">
   <img width="32%" height="auto" src="./.github/404.jpg">
