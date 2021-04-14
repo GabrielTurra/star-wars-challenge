@@ -87,6 +87,7 @@ export const DescriptionContainer = styled.div`
 
   @media (max-width: 1050px) {
     margin-top: 4rem;
+    margin-left: 4rem;
   }
 `;
 
