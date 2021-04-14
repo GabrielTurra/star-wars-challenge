@@ -8,7 +8,18 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
 
+  div {
+    position: static !important;
+  }
+
   img {
     cursor: pointer;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: auto !important;
+    max-width: 420px !important;
+    min-height: auto !important;
+    max-height: auto !important;
   }
 `;
