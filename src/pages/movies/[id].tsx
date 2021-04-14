@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import React from 'react';
@@ -28,6 +29,7 @@ interface MoviesItemProps {
     release_date: string;
     formated_release_date: string;
     resume: string;
+    imageLink: string;
   };
 }
 
@@ -46,9 +48,12 @@ export default function MoviePage({ movie }: MoviesItemProps) {
       <Container>
         <Content>
           <ImageBanner>
-            <img
-              src={`../assets/${getImageLink(movie.episode_id, movie.title)}`}
+            <Image
+              src={`/assets/${movie.imageLink}`}
               alt={`Banner of - ${movie.title}`}
+              layout="fill"
+              loading="eager"
+              priority
             />
           </ImageBanner>
 
@@ -121,6 +126,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           "dd MMMM',' yyyy",
           { locale: pt },
         ),
+        imageLink: `${getImageLink(movie.episode_id, movie.title)}`,
         resume: `${movie.opening_crawl.substring(0, 120)}...`,
       },
     },
