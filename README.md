@@ -1,10 +1,15 @@
 <img src="./.github/demonstration.gif">
+<div style="display: flex; justify-content: space-between;">
+  <img style="width: 32%; height:auto;" src="./.github/home.jpg">
+  <img style="width: 32%; height:auto;" src="./.github/movie_page.jpg">
+  <img style="width: 32%; height:auto;" src="./.github/404.jpg">
+</div>
 
 
 <h1 id="about">Star Wars Challenge</h1>
 
-<p>📌 Este projeto tem o intuito de consumir uma APi pública de filmes e dinamicamente mostrar os títulos da franquia Star Wars<p>
-<p>Desafio realizado durante um processo seletivo</p>
+<p>📌 Este projeto tem o intuito de consumir uma APi pública de filmes e dinamicamente mostrar os títulos da franquia Star Wars, repeitando o layout fornecido e as tecnicas de SEO.<p>
+<p>Desafio realizado durante o processo seletivo da Intermobile</p>
 
 <p align="center">
  <a href="#preview">Prévia</a> •
@@ -19,7 +24,7 @@
 
 
 <p>Clique na imagem abaixo e acesse uma prévia da aplicação diretamente na hospedagem da Vercel</p>
-<a target="_blank" href="https://star-wars-challenge-seven.vercel.app"><img src="./.github/logo.jpg" /></a>
+<a target="_blank" href="https://star-wars-challenge-seven.vercel.app"><img src="./.github/logo_star_wars.gif" /></a>
 
 
 <h2 align="left" id="technologies">📐 Tecnologias </h2>
@@ -58,6 +63,6 @@ $ cd star-wars-challenge
 # Inicia o Next, automaticamente baixa todas as dependências
 $ yarn dev
 
-# O servidor inciará na porta:8080 - acesse http://localhost:3000
+# O servidor inciará na porta:3000 - acesse http://localhost:3000
 
 ```
