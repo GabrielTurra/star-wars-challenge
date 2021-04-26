@@ -9,7 +9,6 @@
 <h1 id="about">Star Wars Challenge</h1>
 
 <p>📌 Este projeto tem o intuito de consumir uma APi pública de filmes e dinamicamente mostrar os títulos da franquia Star Wars, repeitando o layout fornecido e as tecnicas de SEO.<p>
-<p>Desafio realizado durante o processo seletivo da Intermobile</p>
 
 <p align="center">
  <a href="#preview">Prévia</a> •
